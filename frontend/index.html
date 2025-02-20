@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/img.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div
+      class="login-container d-flex align-items-center justify-content-center min-vh-80"
+    >
+      <div class="image-section d-none d-md-block col-md-6">
+        <img src="img/LOGO.jpg" alt="Imagem 1" class="img-fluid" />
+      </div>
+      <div class="form-section col-12 col-md-6 p-4">
+        <div class="text-center mb-4">
+          <img
+            src="img/logo2.jpg"
+            alt="Logo"
+            class="img-fluid"
+            style="max-width: 150px"
+          />
+        </div>
+        <form id="loginForm">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100" id="loginBtn">
+            Entrar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal de Notificação -->
+    <div
+      class="modal fade"
+      id="politicaModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Notificação de Política de Privacidade
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong
+                >Atualizamos nossa política de privacidade. Por favor, leia e
+                aceite os novos termos para continuar.</strong
+              >
+              <br /><br />
+              A Sou Energy valoriza sua privacidade. Coletamos dados pessoais,
+              como nome, e-mail e endereço, apenas para aprimorar nossos
+              serviços e garantir sua segurança. Suas informações não serão
+              compartilhadas com terceiros sem seu consentimento, exceto quando
+              exigido por lei. Você pode solicitar a exclusão ou correção de
+              seus dados a qualquer momento.
+              <br /><br />
+              Última atualização: 20/02/2025.
+            </p>
+            <!-- Checkbox para confirmar leitura -->
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="confirmarLeitura"
+              />
+              <label class="form-check-label" for="confirmarLeitura">
+                Eu li e aceito os termos da política de privacidade.
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- Botão bloqueado inicialmente -->
+            <button
+              type="button"
+              class="btn btn-success"
+              id="btnAceitar"
+              disabled
+            >
+              Aceitar Termos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="script.js"></script>
+  </body>
+</html>
