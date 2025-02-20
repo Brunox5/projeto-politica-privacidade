@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f8f9fa; /* Ajuste conforme necessário */
+  background-color: #f8f9fa;
 }
 
 .login-container {
@@ -42,21 +42,21 @@ body {
 }
 
 .btn-primary {
-  background-color: #f42c0b; /* Cor padrão do botão */
+  background-color: #f42c0b;
   border: none;
   border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.1s ease; /* Suaviza a transição */
+  transition: background-color 0.3s ease, transform 0.1s ease; 
 }
 
-/* Efeito ao passar o mouse */
+
 .btn-primary:hover {
   background-color: #f9820a;
 }
 
-/* Efeito ao clicar e enquanto estiver pressionado */
+
 .btn-primary:active {
   background-color: #f9820a !important;
   transform: scale(
     0.95
-  ); /* Dá um efeito de clique reduzindo um pouco o tamanho */
+  ); 
 }
