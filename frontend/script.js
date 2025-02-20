@@ -62,14 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Exibe o nome do usuário na página, se aplicável
+  // Exibe o nome do usuário na página
   const nomeUsuario = localStorage.getItem("usuarioLogado");
   const usuarioNomeElement = document.getElementById("usuarioNome");
   if (nomeUsuario && usuarioNomeElement) {
     usuarioNomeElement.textContent = nomeUsuario;
   }
 
-  // Evento para o botão "Sair"
+  //  botão "Sair"
   const btnSair = document.getElementById("btnSair");
   if (btnSair) {
     btnSair.addEventListener("click", function () {
